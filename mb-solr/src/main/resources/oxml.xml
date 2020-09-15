@@ -251,6 +251,7 @@
                 <xml-element java-attribute="status">
                     <xml-java-type-adapter value="org.musicbrainz.search.solrwriter.moxy.StringStatusAdapter"/>
                 </xml-element>
+                <xml-element java-attribute="packaging" xml-path="." />
             </java-attributes>
         </java-type>
         <java-type name="Recording">
@@ -538,6 +539,12 @@
         <java-type name="Iso31663CodeList">
             <java-attributes>
                 <xml-element java-attribute="iso31663Code" name="iso-3166-3-codes"/>
+            </java-attributes>
+        </java-type>
+        <java-type name="Packaging">
+            <java-attributes>
+                <xml-element java-attribute="content" name="packaging" />
+                <xml-attribute java-attribute="id" name="packaging-id" />
             </java-attributes>
         </java-type>
         <java-type name="Alias">
